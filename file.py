@@ -17,4 +17,9 @@ class File:
 
 
 m = File("e.txt")
-m.read()
+while True:
+    cmds = input("what")
+    if cmds == 'q':
+        break
+    if cmds == "":
+        m.read()

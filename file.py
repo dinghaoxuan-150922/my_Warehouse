@@ -18,8 +18,13 @@ class File:
 
 m = File("e.txt")
 while True:
-    cmds = input("what")
+    cmds = input(">>>")
     if cmds == 'q':
         break
-    if cmds == "":
+    if cmds == "read":
         m.read()
+    if cmds == "add":
+        string = input(">>>")
+        m.read(string)
+    if cmds == "all_del":
+        m.all_del()

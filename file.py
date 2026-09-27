@@ -25,6 +25,6 @@ while True:
         m.read()
     if cmds == "add":
         string = input(">>>")
-        m.read(string)
+        m.add(string)
     if cmds == "all_del":
         m.all_del()
